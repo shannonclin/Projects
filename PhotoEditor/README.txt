@@ -23,3 +23,5 @@ Flip on Backward Slash
 Show Edges
 Blur Image
 Paint Bucket on Current Point
+
+Note that the Reset Picture option only applies to options under "Change Color".
