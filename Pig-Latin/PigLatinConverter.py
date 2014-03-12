@@ -23,17 +23,17 @@ def pigLatinWord(str):
     restOfWord = str[1:wordLength]
     restLength = len(restOfWord)
     latinEnding = 'ay'
-    specialBegin2 = 'qu Qu br Br al Al th Th sh Sh gr Gr pr Pr st St tr Tr'
-    specialBegin3 = 'thr Thr'
+    specialBegin2 = 'qu br al th sh gr pr st tr cr'
+    specialBegin3 = 'thr'
     vowels = 'aeiouAEIOU'
     # special beginnings with three letters
-    if str[0:3] in specialBegin3:
+    if str[0:3].lower() in specialBegin3:
         if firstLetter.isupper():
             return str[3].upper() + str[4:] + str[0:3].lower() + latinEnding
         else:
             return str[3:] + str[0:3] + latinEnding
     # special beginnings with two letters
-    if str[0:2] in specialBegin2:
+    if str[0:2].lower() in specialBegin2:
         if firstLetter.isupper():
             return str[2].upper() + str[3:] + str[0:2].lower() + latinEnding
         else:
