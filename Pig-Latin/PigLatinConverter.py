@@ -43,7 +43,7 @@ def pigLatinWord(str):
     # if firstLetter is a lower or uppercase vowel, attach -ay
     elif firstLetter in vowels:
         return str + latinEnding
-    # if word
+    # if word has one letter only
     elif wordLength == 1:
         return str + latinEnding
     # if the firstLetter is an uppercase consonant and str has
