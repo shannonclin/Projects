@@ -28,16 +28,18 @@ def pigLatinWord(str):
     vowels = 'aeiouAEIOU'
     # special beginnings with three letters
     if str[0:3].lower() in specialBegin3:
+        num = 3
         if firstLetter.isupper():
-            return str[3].upper() + str[4:] + str[0:3].lower() + latinEnding
+            return str[num].upper() + str[num+1:] + str[:num].lower() + latinEnding
         else:
-            return str[3:] + str[0:3] + latinEnding
+            return str[num:] + str[:num] + latinEnding
     # special beginnings with two letters
     if str[0:2].lower() in specialBegin2:
+        num = 2
         if firstLetter.isupper():
-            return str[2].upper() + str[3:] + str[0:2].lower() + latinEnding
+            return str[num].upper() + str[num+1:] + str[:num].lower() + latinEnding
         else:
-            return str[2:] + str[0:2] + latinEnding
+            return str[num:] + str[:num] + latinEnding
     # if firstLetter is a lower or uppercase vowel, attach -ay
     elif firstLetter in vowels:
         return str + latinEnding
