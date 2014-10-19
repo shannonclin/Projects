@@ -1,0 +1,114 @@
+.toolbar {
+	background-color: rgb(34, 139, 34);
+	position: fixed;
+	height:50px;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	padding-left: 20px;
+	/* For text in div */
+	line-height: 50px;
+	color: rgb(152, 251, 152);
+	font-family: "Trebechut MS", Helvetica, sans-serif;
+	font-size: 30px;
+}
+
+.play-button {
+	min-width: 100px;
+	height: 100%;
+	float: right;
+	background: rgba(122, 186, 122, 0.5);
+	padding-left: 10px;
+}
+
+.whiteboard {
+	width: 80%;
+	height: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px;
+	background: white;
+}
+
+.board {
+
+}
+
+.options {
+	position: relative;
+	top: -400px;
+	float: right;
+	margin-right: 25px;
+	width: 30%;
+	height: 80%;
+}
+
+.option-buttons {
+	position: relative;
+	width: 100%;
+	background: rgb(34, 139, 34);
+	color: rgb(152, 251, 152);
+	font-family: "Trebechut MS", Helvetica, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	margin-bottom: 20px;
+	visibility: hidden;
+}
+
+.result {
+	position: relative;
+	width: 100%;
+	color: black;
+	font-family: "Trebechut MS", Helvetica, sans-serif;
+	font-size: 50px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	margin-top: 150px;	
+}
+
+.background {
+	background: rgb(204, 255, 187);
+	padding-top: 80px;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+.grid {
+	float:left;
+	width: 50px;
+    height: 50px;
+    outline: 1.5px solid;
+    text-align: center;
+	vertical-align: middle;
+	line-height: 50px; 
+    font-size: 50px;
+    font-family: "Trebechut MS", Helvetica, sans-serif;
+}
+
+.grid:hover {
+	cursor: pointer;
+}
+
+.option-buttons:hover, .play-button:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.grid:active {
+	background: rgb(0, 204, 204);
+}
+
+.option-buttons:active, .play-button:active {
+	background: rgba(125, 220, 31, 0.5);
+    text-shadow:
+    -1px -1px 0 #72BC72,
+    1px -1px 0 #72BC72,
+    -1px 1px 0 #72BC72,
+    1px 1px 0 #72BC72;
+}
